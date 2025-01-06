@@ -9,6 +9,7 @@ With features like secure login, note categorization, image attachments, and pas
 ## *🌟 Features 🌟*
 
 ### 1. *Authorization (Login and Sign Up)* 🔐
+
 ![Authorization](assets/screenShot/note1.png)
 
 Secure your notes with a login and sign-up system:
@@ -18,7 +19,7 @@ Secure your notes with a login and sign-up system:
 
 ---
 
-![Splash Screen](assets/screenShot/note3.png)
+![Feature Screen](assets/screenShot/note3.png)
 
 ### 2. *Splash Screen and Wait Page* 🙌🔄
 
@@ -57,14 +58,14 @@ Easily log out from the app when needed:
 - *Re-login Required:* Only authorized users can re-access the app. 🔓
 
 ---
-![Splash Screen](assets/screenShot/note2.png)
+![Error Notifications ⚠️](assets/screenShot/note2.png)
 
 ### 6. **Error Notifications ⚠️**
    - **Error Handling**: The app provides user-friendly error notifications for different scenarios:
      - **Login/Signup Errors**: Display error messages like "Invalid username or password!" or "Username already exists."
      - **Category Management Errors**: Handle errors such as "Category name cannot be empty" or "Failed to upload category image."
      - **Note Errors**: Show messages when a note cannot be saved or edited due to validation failures.
-   - **Notification Display**: Errors are shown in a sleek, non-intrusive pop-up notification at the top right of the screen. The notification can be closed by the user by clicking the "X" button. 
+   - **Notification Display**: Errors are shown in a sleek, non-intrusive pop-up notification at the top right of the screen. The notification can be closed automatically
 
 ---
 
