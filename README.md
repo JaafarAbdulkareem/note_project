@@ -9,7 +9,7 @@ With features like secure login, note categorization, image attachments, and pas
 ## *🌟 Features 🌟*
 
 ### 1. *Authorization (Login and Sign Up)* 🔐
-![Authorization](assets/screenshots/auth_screen.png)
+![Authorization](assets/screenShot/note1.png)
 
 Secure your notes with a login and sign-up system:
 
@@ -18,8 +18,9 @@ Secure your notes with a login and sign-up system:
 
 ---
 
+![Splash Screen](assets/screenShot/note3.png)
+
 ### 2. *Splash Screen and Wait Page* 🙌🔄
-![Splash Screen](assets/screenshots/splash_screen.png)
 
 Get a smooth start with an attractive splash screen and wait page while the app prepares to load:
 
@@ -29,7 +30,6 @@ Get a smooth start with an attractive splash screen and wait page while the app 
 ---
 
 ### 3. *Category Management* 🌐📝
-![Category Management](assets/screenshots/category.png)
 
 Organize your notes into categories:
 
@@ -40,7 +40,6 @@ Organize your notes into categories:
 ---
 
 ### 4. *Notes Page* 📑✏️
-![Notes Page](assets/screenshots/notes_page.png)
 
 Manage your notes efficiently with a user-friendly notes page:
 
@@ -51,12 +50,21 @@ Manage your notes efficiently with a user-friendly notes page:
 ---
 
 ### 5. *Sign Out* 🚪
-![Sign Out](assets/screenshots/sign_out.png)
 
 Easily log out from the app when needed:
 
 - *Secure Exit:* Ensures your data remains protected after logging out. 🛡️  
 - *Re-login Required:* Only authorized users can re-access the app. 🔓
+
+---
+![Splash Screen](assets/screenShot/note2.png)
+
+### 6. **Error Notifications ⚠️**
+   - **Error Handling**: The app provides user-friendly error notifications for different scenarios:
+     - **Login/Signup Errors**: Display error messages like "Invalid username or password!" or "Username already exists."
+     - **Category Management Errors**: Handle errors such as "Category name cannot be empty" or "Failed to upload category image."
+     - **Note Errors**: Show messages when a note cannot be saved or edited due to validation failures.
+   - **Notification Display**: Errors are shown in a sleek, non-intrusive pop-up notification at the top right of the screen. The notification can be closed by the user by clicking the "X" button. 
 
 ---
 
