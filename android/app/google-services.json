@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "667204274859",
+    "project_id": "note-application-97107",
+    "storage_bucket": "note-application-97107.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667204274859:android:8b0fbce1492a5a2497c5ee",
+        "android_client_info": {
+          "package_name": "com.tindog2023.note_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-9mj_jv50ekzD-3eWE22KmZtLnA1atbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667204274859:android:f79d64c8727a2d9b97c5ee",
+        "android_client_info": {
+          "package_name": "com.tinog2023.note_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-9mj_jv50ekzD-3eWE22KmZtLnA1atbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
