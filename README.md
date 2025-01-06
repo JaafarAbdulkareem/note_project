@@ -72,9 +72,9 @@ Easily log out from the app when needed:
 
 If you have any questions, suggestions, or feedback, we would love to hear from you! 🤗📞
 
-- *Email:* noteappsupport@example.com 📧  
-- *LinkedIn:* [@NoteApp](https://www.linkedin.com/in/noteapp) 📝  
-- *WhatsApp:* [Contact us on WhatsApp](https://wa.me/+1234567890) 📱
+- *Email:* jaafar.tbp@gamil.com📧  
+- *LinkedIn:* [@Jaafar Abdulkareem](https://www.linkedin.com/in/jaafar-b-23b647297/) 📚  
+- *WhatsApp:* [Contact us on WhatsApp](https://wa.me/+917204438952) 📱
 
 ---
 
