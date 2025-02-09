@@ -17,7 +17,7 @@ void main() async {
   prefs = await SharedPreferences.getInstance();
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       // enabled: !kReleaseMode,
       builder: (context) => const MyApp(), // Wrap your app
     ),

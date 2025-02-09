@@ -29,19 +29,17 @@ mixin class Curd {
     required Map<String, dynamic> body,
   }) async {
     try {
-    // log(body.toString());
-    http.Response response = await http.post(
-      Uri.parse(url),
-      body: body,
-    );
-    if (response.statusCode == ConstantSize.statusCode) {
-      return jsonDecode(response.body);
-    } else {
-      debugPrint("${LanguageKeys.errorStatus} ${response.statusCode}");
-    }
+      http.Response response = await http.post(
+        Uri.parse(url),
+        body: body,
+      );
+      if (response.statusCode == ConstantSize.statusCode) {
+        return jsonDecode(response.body);
+      } else {
+        debugPrint("${LanguageKeys.errorStatus} ${response.statusCode}");
+      }
     } catch (e) {
-      debugPrint(
-          "${LanguageKeys.errorCatch} : Initial POST : $e");
+      debugPrint("${LanguageKeys.errorCatch} : Initial POST : $e");
     }
   }
 
@@ -51,34 +49,34 @@ mixin class Curd {
     required File file,
   }) async {
     try {
-    http.MultipartRequest multipartRequest =
-        http.MultipartRequest("POST", Uri.parse(url));
+      http.MultipartRequest multipartRequest =
+          http.MultipartRequest("POST", Uri.parse(url));
 
-    http.ByteStream stream = http.ByteStream(file.openRead());
-    int length = await file.length();
-    var multifile = http.MultipartFile(
-      ConstantNoteApi.image,
-      stream,
-      length,
-      filename: basename(file.path),
-    );
-    multipartRequest.files.add(multifile);
+      http.ByteStream stream = http.ByteStream(file.openRead());
+      int length = await file.length();
+      var multifile = http.MultipartFile(
+        ConstantNoteApi.image,
+        stream,
+        length,
+        filename: basename(file.path),
+      );
+      multipartRequest.files.add(multifile);
 
-    body.forEach((key, value) {
-      multipartRequest.fields[key] = value;
-    });
+      body.forEach((key, value) {
+        multipartRequest.fields[key] = value;
+      });
 
-    http.StreamedResponse streamedResponse = await multipartRequest.send();
+      http.StreamedResponse streamedResponse = await multipartRequest.send();
 
-    http.Response response = await http.Response.fromStream(streamedResponse);
+      http.Response response = await http.Response.fromStream(streamedResponse);
 
-    if (response.statusCode == ConstantSize.statusCode) {
-      // var pdfText= await json.decode(json.encode(response.body));
-      // return pdfText;
-      return await jsonDecode(response.body);
-    } else {
-      debugPrint("${LanguageKeys.errorStatus} ${response.statusCode}");
-    }
+      if (response.statusCode == ConstantSize.statusCode) {
+        // var pdfText= await json.decode(json.encode(response.body));
+        // return pdfText;
+        return await jsonDecode(response.body);
+      } else {
+        debugPrint("${LanguageKeys.errorStatus} ${response.statusCode}");
+      }
     } catch (e) {
       debugPrint("${LanguageKeys.errorCatch} : Initial POST FILE : $e");
     }

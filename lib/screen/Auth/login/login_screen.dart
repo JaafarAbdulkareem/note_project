@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note_application/constant/langauage_keys.dart';
@@ -20,31 +18,28 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthLoginCubit, AuthRegisterState>(
       listener: (context, state) async {
-        log("state : $state");
         if (state is ErrorRegisterState) {
-        log("Message : ${state.errorMessage}");
           if (!context.mounted) return;
-        await flashBar(
+          await flashBar(
             title: LanguageKeys.alertTitle.tr(context),
             message: state.errorMessage.tr(context),
           ).show(context);
         } else if (state is GoToEmailRegisterState) {
-          
           if (!context.mounted) return;
           await goToEmail(context: context).show();
         }
       },
       builder: (context, state) {
-        log("build : $state");
-        if (state is InitialRegisterState) {
-          BlocProvider.of<DataCenterCubit>(context).postAppData();
-        } else if (state is GoogleNullRegisterState) {
+        // if (state is InitialRegisterState) {
+        //   BlocProvider.of<DataCenterCubit>(context).postAppData();
+        // } else 
+        if (state is GoogleNullRegisterState) {
           return const LoginView();
         } else if (state is LoadingRegisterState) {
           return const CustomerCircularProgressWidget();
         } else if (state is SuccessedRegisterState) {
           // DataCenterCubit.dataCenter.clear();
-          BlocProvider.of<DataCenterCubit>(context).postAppData();
+          // BlocProvider.of<DataCenterCubit>(context).postAppData();
           return const InitialScreen();
         }
         return const LoginView();
