@@ -7,7 +7,7 @@ import 'package:note_application/cubit/note/note_choose_image/note_choose_image_
 
 class NoteChooseImageCubit extends Cubit<NoteChooseImageState> {
   NoteChooseImageCubit() : super(InitialNoteChooseImageState());
-static String? imagePath ;
+  static String? imagePath;
   Future<void> chooseImage({
     required ImageSource source,
     required BuildContext context,
@@ -20,15 +20,16 @@ static String? imagePath ;
       image = await picker.pickImage(source: source);
       if (image != null) {
         name = image.path;
-       imagePath = name;
+        imagePath = name;
         emit(SuccessedNoteChooseImageState());
         // return name;
-      } else {
-        emit(ErrorNoteChooseImageState(
-            errorMessage: LanguageKeys.errorForUser));
-        // log('null');
       }
-    } on PlatformException catch (e) {
+      //else {
+      // emit(ErrorNoteChooseImageState(
+      //     errorMessage: LanguageKeys.errorForUser));
+      // log('null');
+      // }o
+    } on PlatformException catch (_) {
       // if (e.code == 'no_available_camera') {
       //   debugPrint('No camera found on device');
       // } else if (e.code == 'PERMISSION_DENIED') {
@@ -36,10 +37,10 @@ static String? imagePath ;
       // } else {
       //   debugPrint("An error occurred: ${e.message}");
       // }
-      emit(ErrorNoteChooseImageState(errorMessage: e.code));
+      // emit(ErrorNoteChooseImageState(errorMessage: e.code));
+      emit(ErrorNoteChooseImageState(errorMessage: LanguageKeys.errorForUser));
     } catch (e) {
-      emit(ErrorNoteChooseImageState(
-          errorMessage: LanguageKeys.errorForUser));
+      emit(ErrorNoteChooseImageState(errorMessage: LanguageKeys.errorForUser));
     }
 
     // return null;

@@ -63,7 +63,7 @@ class _CustomItemNoteWidgetState extends State<CustomItemNoteWidget> {
             vertical: getResponsiveText(context, fontSize: 2),
             horizontal: getResponsiveText(context, fontSize: 8),
           ),
-          child: widget.data.password == null
+          child: widget.data.password == null || widget.data.password!.isEmpty
               ? CustomListTitleWidget(data: widget.data, index: _index)
               : CustomLockNoteWidget(
                   index: _index,

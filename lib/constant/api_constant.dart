@@ -51,10 +51,10 @@ class ConstantImageApiPath {
 
 class ConstantCategoryApi {
   static const String id = "id";
-  static const String categoryName = "category_name";
+  static const String categoryName = "categoryName";
   static const String image = "image";
-  static const String timeDate = "time_date";
-  static const String idUser = "id_user";
+  static const String timeDate = "date";
+  static const String idUser = "userId";
 }
 
 class ConstantNoteApi {
@@ -63,7 +63,7 @@ class ConstantNoteApi {
   static const String content = "content";
   static const String image = "image";
   static const String password = "password";
-  static const String idCategory = "id_category";
+  static const String idCategory = "categoryId";
 }
 
 class ConstantResultApi {
