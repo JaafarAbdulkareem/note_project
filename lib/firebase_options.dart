@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC-9mj_jv50ekzD-3eWE22KmZtLnA1atbU',
-    appId: '1:667204274859:android:8b0fbce1492a5a2497c5ee',
+    appId: '1:667204274859:android:3747a706b534f88897c5ee',
     messagingSenderId: '667204274859',
     projectId: 'note-application-97107',
     storageBucket: 'note-application-97107.firebasestorage.app',
@@ -59,11 +59,13 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyC3hdNSbcWirAEQcfDWkrPwu6_3SOFQFBo',
-    appId: '1:667204274859:ios:ffafbd89a404d21c97c5ee',
+    appId: '1:667204274859:ios:2f6b0c2c74e447de97c5ee',
     messagingSenderId: '667204274859',
     projectId: 'note-application-97107',
     storageBucket: 'note-application-97107.firebasestorage.app',
-    iosBundleId: 'com.tindog2023.noteApplication',
+    androidClientId: '667204274859-ik82ahqds5atd3nmfv2ibm74ct13h1lg.apps.googleusercontent.com',
+    iosClientId: '667204274859-dldu21nnniid1bi2jbqqvfljnqcd7i5a.apps.googleusercontent.com',
+    iosBundleId: 'com.example.noteApplication',
   );
 
 }

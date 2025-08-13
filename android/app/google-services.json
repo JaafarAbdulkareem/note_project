@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:667204274859:android:8b0fbce1492a5a2497c5ee",
+        "mobilesdk_app_id": "1:667204274859:android:3747a706b534f88897c5ee",
         "android_client_info": {
-          "package_name": "com.tindog2023.note_application"
+          "package_name": "com.example.note_application"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "667204274859-oolkf0ij7mo6klh6rvo0mvcjo28ct2es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC-9mj_jv50ekzD-3eWE22KmZtLnA1atbU"
@@ -20,18 +25,43 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667204274859-oolkf0ij7mo6klh6rvo0mvcjo28ct2es.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "667204274859-hjqrah36p5da18uc2j9naur0a87m86mc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tindog2023.noteApplication"
+              }
+            }
+          ]
         }
       }
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:667204274859:android:f79d64c8727a2d9b97c5ee",
+        "mobilesdk_app_id": "1:667204274859:android:8b0fbce1492a5a2497c5ee",
         "android_client_info": {
-          "package_name": "com.tinog2023.note_application"
+          "package_name": "com.tindog2023.note_application"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "667204274859-ik82ahqds5atd3nmfv2ibm74ct13h1lg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tindog2023.note_application",
+            "certificate_hash": "b8862e42c3265fa1045f5f93307e795a8a6895aa"
+          }
+        },
+        {
+          "client_id": "667204274859-oolkf0ij7mo6klh6rvo0mvcjo28ct2es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC-9mj_jv50ekzD-3eWE22KmZtLnA1atbU"
@@ -39,7 +69,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667204274859-oolkf0ij7mo6klh6rvo0mvcjo28ct2es.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "667204274859-hjqrah36p5da18uc2j9naur0a87m86mc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tindog2023.noteApplication"
+              }
+            }
+          ]
         }
       }
     }
