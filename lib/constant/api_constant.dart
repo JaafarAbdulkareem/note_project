@@ -1,6 +1,6 @@
 class ConstantApiPath {
-  static const String serverName = "http://192.168.0.103/";
-  static const String projectPath = "project/note_application/query";
+  static const String serverName = "https://pleasantly-divine-bear.ngrok-free.app";//"http://192.168.0.103/";
+  static const String projectPath = "/project/note_application/query";
   static const String categoryPath = "$projectPath/category/";
   static const String notePath = "$projectPath/note/";
   static const String imageFold = "project/note_application/upload/";
