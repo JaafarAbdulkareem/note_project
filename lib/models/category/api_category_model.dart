@@ -7,8 +7,8 @@ class ApiCategoryModel {
   String? date;
   final String idUser;
 
-  ApiCategoryModel( {
-     this.id,
+  ApiCategoryModel({
+    this.id,
     required this.name,
     required this.image,
     required this.date,
@@ -17,7 +17,9 @@ class ApiCategoryModel {
 
   factory ApiCategoryModel.fromJson(Map<String, dynamic> json) {
     return ApiCategoryModel(
-      id: json[ConstantCategoryApi.id],
+      id: json[ConstantCategoryApi.id] != null
+          ? int.parse(json[ConstantCategoryApi.id])
+          : null,
       name: json[ConstantCategoryApi.categoryName],
       image: json[ConstantCategoryApi.image],
       date: json[ConstantCategoryApi.timeDate],

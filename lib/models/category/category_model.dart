@@ -8,18 +8,18 @@ class CategoryModel {
   String? name;
   String? image;
   String? date;
-  int? noNote;
-  List<NoteModel>? listNote;
+  int noNote;
+  List<NoteModel> listNote;
 
   CategoryModel({
     required this.id,
-    required this.name,
-    required this.image,
-    required this.date,
+    this.name,
+    this.image,
+    this.date,
     this.noNote = 0,
-    this.listNote,
-  });
-
+    List<NoteModel>? listNote,
+  }) : listNote = listNote ?? [];
+  
   factory CategoryModel.fromApiData(
       {required ApiCategoryModel apiCategoryData}) {
     return CategoryModel(

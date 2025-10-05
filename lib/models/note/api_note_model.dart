@@ -19,12 +19,12 @@ class ApiNoteModel {
 
   factory ApiNoteModel.fromJson(Map<String, dynamic> json) {
     return ApiNoteModel(
-      id: json[ConstantNoteApi.id],
+      id: int.parse(json[ConstantNoteApi.id]),
       title: json[ConstantNoteApi.title],
       content: json[ConstantNoteApi.content],
       image: json[ConstantNoteApi.image],
       password: json[ConstantNoteApi.password],
-      idCategory: json[ConstantNoteApi.idCategory],
+      idCategory: int.parse(json[ConstantNoteApi.idCategory]),
     );
   }
 

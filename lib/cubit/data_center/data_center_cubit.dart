@@ -39,7 +39,7 @@ class DataCenterCubit extends Cubit<DataCenterState> with Curd {
           );
         }
       }
-      dataCenter[i].listNote = List.from(noteData);
+      dataCenter[i].listNote =  List.from(noteData);
       dataCenter[i].noNote = noteData.length;
       noteData.clear();
     }
